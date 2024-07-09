@@ -1,0 +1,10 @@
+name: mlrecipes
+version: $VERSION
+appVersion: 1.0.0
+description: Multi-user Jupyter installation
+home: https://github.com/khulnasoft/ml-recipes
+sources:
+  - https://github.com/khulnasoft/ml-recipes/helmchart
+icon: https://jupyter.org/assets/hublogo.svg
+kubeVersion: ">= 1.19.0-0"
+tillerVersion: '>=2.11.0-0'
