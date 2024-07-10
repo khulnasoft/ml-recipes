@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "Starting ML Hub\n"
+printf "Starting ML Recipes\n"
 
 incoming_args="$ADDITIONAL_ARGS"
 execution_mode=${EXECUTION_MODE:-local}

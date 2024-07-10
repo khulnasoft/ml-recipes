@@ -77,6 +77,14 @@ RUN \
    # Cleanup
    clean-layer.sh
 
+### END BASICS ###
+
+### MLRECIPES-SPECIFIC INSTALLATIONS ###
+RUN \
+   pip install --upgrade pip \
+   pip install setuptools_rust
+# Copy mlrecipesspawner module to install it
+
 # Install JupyterHub
 RUN \
    npm install -g configurable-http-proxy && \
@@ -84,11 +92,6 @@ RUN \
    # Cleanup
    clean-layer.sh
 
-### END BASICS ###
-
-### MLRECIPES-SPECIFIC INSTALLATIONS ###
-
-# Copy mlrecipesspawner module to install it
 COPY resources/mlrecipesspawner /mlrecipesspawner
 
 RUN \

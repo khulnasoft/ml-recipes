@@ -4,6 +4,6 @@ setup(name='mlrecipesspawner',
       version='0.1',
       description='MLRecipes DockerSpawner with multiple options to set',
       url='https://github.com/khulnasoft/ml-recipes',
-      author='MLTooling Team',
+      author='KhulnaSoft Team',
       packages=['mlrecipesspawner'],
       zip_safe=False)

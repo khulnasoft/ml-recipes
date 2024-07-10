@@ -1,5 +1,5 @@
 <h1 align="center">
-     ML Hub
+     ML Recipes
     <br>
 </h1>
 
@@ -11,7 +11,7 @@
     <a href="https://hub.docker.com/r/khulnasoft/ml-recipes" title="Docker Image Version"><img src="https://images.microbadger.com/badges/version/khulnasoft/ml-recipes.svg"></a>
     <a href="https://hub.docker.com/r/khulnasoft/ml-recipes" title="Docker Pulls"><img src="https://img.shields.io/docker/pulls/khulnasoft/ml-recipes.svg"></a>
     <a href="https://hub.docker.com/r/khulnasoft/ml-recipes" title="Docker Image Metadata"><img src="https://images.microbadger.com/badges/image/khulnasoft/ml-recipes.svg"></a>
-    <a href="https://github.com/khulnasoft/ml-recipes/blob/master/LICENSE" title="ML Hub License"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg"></a>
+    <a href="https://github.com/khulnasoft/ml-recipes/blob/master/LICENSE" title="ML Recipes License"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg"></a>
     <a href="https://gitter.im/khulnasoft/ml-recipes" title="Chat on Gitter"><img src="https://badges.gitter.im/khulnasoft/ml-recipes.svg"></a>
     <a href="https://twitter.com/khulnasoft" title="KhulnaSoft on Twitter"><img src="https://img.shields.io/twitter/follow/khulnasoft.svg?style=social"></a>
 </p>
@@ -254,7 +254,7 @@ All resources created by our custom spawners are labeled (Docker / Kubernetes la
 
 ## Support
 
-The ML Hub project is maintained by [@raethlein](https://twitter.com/raethlein) and [@LukasMasuch](https://twitter.com/LukasMasuch). Please understand that we won't be able
+The ML Recipes project is maintained by [@raethlein](https://twitter.com/raethlein) and [@LukasMasuch](https://twitter.com/LukasMasuch). Please understand that we won't be able
 to provide individual support via email. We also believe that help is much more
 valuable if it's shared publicly so that more people can benefit from it.
 
