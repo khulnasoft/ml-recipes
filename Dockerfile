@@ -1,4 +1,4 @@
-FROM khulnasoft/ssh-proxy:master
+FROM khulnasoft/ssh-proxy:latest
 
 WORKDIR /
 
@@ -77,14 +77,6 @@ RUN \
    # Cleanup
    clean-layer.sh
 
-### END BASICS ###
-
-### MLRECIPES-SPECIFIC INSTALLATIONS ###
-RUN \
-   pip install --upgrade pip \
-   pip install setuptools_rust
-# Copy mlrecipesspawner module to install it
-
 # Install JupyterHub
 RUN \
    npm install -g configurable-http-proxy && \
@@ -92,6 +84,11 @@ RUN \
    # Cleanup
    clean-layer.sh
 
+### END BASICS ###
+
+### MLRECIPES-SPECIFIC INSTALLATIONS ###
+
+# Copy mlrecipesspawner module to install it
 COPY resources/mlrecipesspawner /mlrecipesspawner
 
 RUN \
@@ -185,7 +182,7 @@ ARG ARG_VCS_REF="unknown"
 
 # Overwrite & add common labels
 LABEL \
-    "maintainer"="khulnasoft.team@gmail.com" \
+    "maintainer"="info@khulnasoft.com" \
     # Kubernetes Labels
     "io.k8s.description"="Multi-user hub which spawns and manages workspace instances." \
     "io.k8s.display-name"="Machine Learning Hub" \
