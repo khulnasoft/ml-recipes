@@ -1,4 +1,4 @@
-FROM khulnasoft/ssh-proxy:latest
+FROM khulnasoft/ssh-proxy:master
 
 WORKDIR /
 
