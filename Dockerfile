@@ -77,10 +77,12 @@ RUN \
    # Cleanup
    clean-layer.sh
 
-# Install JupyterHub
-RUN \
-    npm install -g configurable-http-proxy && \
-    python3 -m pip install --no-cache setuptools_rust && \
+# Install Rust
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+RUN npm install -g configurable-http-proxy && \
+    python3 -m pip install --no-cache --upgrade pip setuptools wheel && \
     python3 -m pip install --no-cache jupyterhub && \
     # Cleanup
     clean-layer.sh
