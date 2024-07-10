@@ -79,10 +79,11 @@ RUN \
 
 # Install JupyterHub
 RUN \
-   npm install -g configurable-http-proxy && \
-   python3 -m pip install --no-cache jupyterhub && \
-   # Cleanup
-   clean-layer.sh
+    npm install -g configurable-http-proxy && \
+    python3 -m pip install --no-cache setuptools_rust && \
+    python3 -m pip install --no-cache jupyterhub && \
+    # Cleanup
+    clean-layer.sh
 
 ### END BASICS ###
 
