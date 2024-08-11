@@ -110,7 +110,7 @@ RUN \
 ### INCUBATION ZONE ###
 
 # Kubernetes Support
-ADD https://raw.githubusercontent.com/khulnasoft/zero-to-mlrecipes-k8s/master/images/hub/cull_idle_servers.py /usr/local/bin/cull_idle_servers.py
+ADD https://raw.githubusercontent.com/khulnasoft/zero-to-mlrecipes-k8s/khulnasoft/images/hub/cull_idle_servers.py /usr/local/bin/cull_idle_servers.py
 ADD resources/kubernetes/jupyterhub_chart_config.py $_RESOURCES_PATH/jupyterhub_chart_config.py
 # Copy the jupyterhub config that has a lot of options to be configured
 
