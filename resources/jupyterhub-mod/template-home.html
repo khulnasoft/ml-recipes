@@ -60,7 +60,7 @@
             if (serverUser.length === 1) {
                 user = serverUser.val();
             }
-            window.location.href = "../spawn/" + user + "/" + serverName;
+            window.location.href = "../spawn/" + encodeURIComponent(user) + "/" + encodeURIComponent(serverName);
       }
   </script>
 
